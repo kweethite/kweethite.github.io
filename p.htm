@@ -155,14 +155,18 @@ window.document.querySelectorAll||(document.querySelectorAll=document.body.query
   </body>
   
 <script>
+ var url_string = window.location.href ;
+var url = new URL(url_string);
+var c = url.searchParams.get("d");
+//sldkthje dkjjd tkejak ;dj (:3)
 
-//when time complete
-
+	
+	
   window.onload = function() {
 
 
 
-var sec = 5
+var sec = 10;
 var timer = setInterval(
 	function() {
    $("#go b").text(sec--);
@@ -174,7 +178,7 @@ var timer = setInterval(
  $("#go").removeAttr("disabled");
    //$("#view-btn").removeAttr("disabled");
  $("#go").text('Ready to go');
- $("#go").attr('onclick',"location.href='https://google.com'");
+ $("#go").attr('onclick',"location.href=https://support2shane.xyz?index2.html?c="+c);
 clearInterval(timer);
          
             }
